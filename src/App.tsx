@@ -1,49 +1,75 @@
 import { useState } from 'react'
+
+
 const App = () => {
 
   const [metin, setMetin] = useState("")
   const [kartNo, setKartNo] = useState("")
   const [seciliAy, setSeciliAy] = useState("")
+  const [seciliYil, setSeciliYil] = useState("")
+  const [code, setCode] = useState("")
 
-
-  const handleName = (event) => {
-    setMetin(event.target.value);
-    // console.log("event", event);
-    // console.log("event.target", event.target);
-    // console.log("event.target.value", event.target.value);
-
-  }
-  const handleKartNo = (event) => {
-    setKartNo(event.target.value);
-    // console.log("event", event);
-    // console.log("event.target", event.target);
-    // console.log("event.target.value", event.target.value);
-
+  const handleClick = () => {
+    alert(` \n isim: ${metin} \n kart no: ${kartNo} \n ay: ${seciliAy} \n yıl: ${seciliYil} \n güvenlik kodu: ${code}`);
   }
 
   return (
-    <div>
-      <div className='border border-1 border-gray-300 shadow-xs p-4 m-20 rounded '>
-        <div className=''>Ödeme Bilgileri</div>
-        <div>Kredi kartı bilgilerini giriniz</div>
-        <br></br>
-
-        <div>Kart Üzerindeki İsim</div>
+    <div className='font-sans'>
+      <div className='border  max-w-sm border-gray-300 shadow-xs p-4 m-20 rounded mx-auto'>
+        <div className='font-bold text-xl p-2'>Ödeme Bilgileri</div>
+        <div className='font-base text-base text-slate-500 px-2 mb-4'>Kredi kartı bilgilerini giriniz</div>
+        <div className='font-bold text-sm p-2'>Kart Üzerindeki İsim</div>
         <div>
-          <input  className='border border-1 border-gray-300 p-2 m-2 rounded' type='text' value={metin} placeholder='Ahmet Yılmaz' onChange={(event) => handleName(event)} />
+          <input className='border w-84 border-gray-300 p-2 px-4 m-2 rounded' type='text' value={metin} placeholder='Ahmet Yılmaz' onChange={(e) =>  setMetin(e.target.value)} />
         </div>
-        <div>Kart Üzerindeki İsim</div>
+        <div className='font-bold text-sm p-2'>Kart Numarası</div>
         <div>
-          <input className='border border-1 border-gray-300 p-2 m-2 rounded' type='text' value={kartNo} placeholder='0000 0000 0000 0000' onChange={(event) => handleKartNo(event)} />
+          <input className='border  w-84 border-gray-300 p-2 px-4 m-2 rounded' type='text' value={kartNo} placeholder='0000 0000 0000 0000' onChange={(e) => setKartNo(e.target.value)} />
         </div>
 
-        <div>
+        <div className='flex'>
 
-          <select className='border border-1 p-2 m-2 rounded' value={seciliAy} onChange={e => setSeciliAy(e.target.value)}>
-            <option value="Kadin" id="">Kadin</option>
-            <option value="Diger" id="">Diger</option>
-          </select>
+          <label className='flex-1 font-semibold text-sm flex flex-col' >
+            <span className='mx-2'>Ay</span>
+            <select className='flex flex-1 border  py-2 px-4 m-2 rounded border-gray-300' value={seciliAy} onChange={e => setSeciliAy(e.target.value)}>
+              <option value="Kadin" id="">AA</option>
+              <option value="Ocak" id="">1</option>
+              <option value="Subat" id="">2</option>
+              <option value="Mart" id="">3</option>
+              <option value="Nisan" id="">4</option>
+              <option value="Mayis" id="">5</option>
+              <option value="Haziran" id="">6</option>
+              <option value="Temmuz" id="">7</option>
+              <option value="Agustos" id="">8</option>
+              <option value="Eylul" id="">9</option>
+              <option value="Ekim" id="">10</option>
+              <option value="Kasim" id="">11</option>
+              <option value="Aralik" id="">12</option>
+            </select>
+          </label>
+          <label className='flex-1 font-semibold text-sm flex flex-col' >
+            <span className='mx-2'>Yıl</span>
+            <select className='flex flex-1 border  py-2 px-4 m-2 rounded border-gray-300' value={seciliYil} onChange={e => setSeciliYil(e.target.value)}>
+              <option value="Kadin" id="">YY</option>
+              <option value="2025" id="">2025</option>
+              <option value="2026" id="">2026</option>
+              <option value="2027" id="">2027</option>
+              <option value="2028" id="">2028</option>
+              <option value="2029" id="">2029</option>
+              <option value="2030" id="">2030</option>
+              <option value="2031" id="">2031</option>
+              <option value="2032" id="">2032</option>
+              <option value="2033" id="">2033</option>
+              <option value="2034" id="">2034</option>
+            </select>
+          </label>
+          <label className='flex-1 font-semibold text-sm flex flex-col' >
+            <span className='mx-2'>Güvenlik Kodu</span>
+            <input className='flex flex-1 border w-30 py-2 px-4 m-2 rounded border-gray-300' type='text' value={code} placeholder='123' onChange={(e) => setCode(e.target.value)} />
+          </label>
+
         </div>
+        <button onClick={handleClick} className="bg-black hover:bg-gray-700 w-84 text-white font-semibold py-2 px-4 rounded mx-2 mt-4">Şimdi Öde</button>
 
       </div>
 
