@@ -15,14 +15,14 @@ const App = () => {
 
   return (
     <div className='grid grid-cols-1 items-center h-screen font-sans'>
-      <div className='border  max-w-sm border-gray-300 shadow-xs p-4 m-20 rounded mx-auto'>
-        <div className='font-bold text-xl p-2'>Ödeme Bilgileri</div>
-        <div className='font-base text-base text-slate-500 px-2 mb-4'>Kredi kartı bilgilerini giriniz</div>
-        <div className='font-bold text-sm p-2'>Kart Üzerindeki İsim</div>
+      <div className='border  max-w-sm border-gray-300 shadow-xs px-4 py-4 m-20 rounded mx-auto'>
+        <div className='font-bold text-xl px-2 mt-2'>Ödeme Bilgileri</div>
+        <div className='font-base text-sm text-slate-500 px-2 mb-6'>Kredi kartı bilgilerini giriniz</div>
+        <div className='font-semibold text-sm px-2'>Kart Üzerindeki İsim</div>
         <div>
           <input className='border w-84 border-gray-300 p-2 px-4 m-2 rounded' type='text' value={metin} placeholder='Ahmet Yılmaz' onChange={(e) =>  setMetin(e.target.value)} />
         </div>
-        <div className='font-bold text-sm p-2'>Kart Numarası</div>
+        <div className='font-semibold text-sm px-2'>Kart Numarası</div>
         <div>
           <input className='border  w-84 border-gray-300 p-2 px-4 m-2 rounded' type='text' value={kartNo} placeholder='0000 0000 0000 0000' onChange={(e) => setKartNo(e.target.value)} />
         </div>
@@ -69,7 +69,7 @@ const App = () => {
           </label>
 
         </div>
-        <button onClick={handleClick} className="bg-black hover:bg-gray-700 w-84 text-white font-semibold py-2 px-4 rounded mx-2 mt-4">Şimdi Öde</button>
+        <button onClick={handleClick} className="bg-black cursor-pointer w-84 text-white font-semibold py-2 px-4 rounded mx-2 mt-4">Şimdi Öde</button>
 
       </div>
 
