@@ -11,6 +11,11 @@ Formda kullanıcıdan şu bilgiler alınmaktadır:
 - Yıl
 - Güvenlik Kodu
 
+## 📸 Ekran Görüntüsü
+
+![Ödeme Formu](public/screenshot.png)
+
+
 ##  Özellikler
 
 - Modern ve responsive tasarım  
@@ -53,9 +58,6 @@ proje-adi/
 - Node.js 18+
 - npm (veya yarn)
 
-## 📸 Ekran Görüntüsü
-
-![Ödeme Formu](public/screenshot.png)
 
 ## 🌐 GitHub
 
