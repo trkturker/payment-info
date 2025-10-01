@@ -1,20 +1,21 @@
 
-# React + Vite Başlangıç Şablonu
+# React + TailwindCSS ile Kredi Kartı Ödeme Formu
 
-Bu proje, modern bir React uygulaması başlatmak için temel bir yapı sunar. Vite kullanılarak yapılandırılmıştır ve Tailwind CSS ile birlikte gelir.
+Bu proje, **React** ve **TailwindCSS** kullanılarak hazırlanmış basit bir kredi kartı ödeme formunu içerir.  
 
-## 🚀 Hızlı Başlangıç
+Formda kullanıcıdan şu bilgiler alınmaktadır:
 
-Projeyi bilgisayarına klonlamak ve başlatmak için aşağıdaki adımları takip edebilirsin:
+- Kart Üzerindeki İsim
+- Kart Numarası
+- Ay
+- Yıl
+- Güvenlik Kodu
 
-```bash
-npx degit ozcanzaferayan/react proje-adi
-cd proje-adi
-npm install
-npm run dev
-```
+##  Özellikler
 
-> Bu komut sayesinde Git geçmişi olmadan yalnızca proje dosyaları indirilir.
+- Modern ve responsive tasarım  
+- TailwindCSS ile kolay özelleştirme  
+- Placeholder’lar ve input alanları ile kullanıcı dostu arayüz 
 
 ## 📁 Klasör Yapısı
 
@@ -52,6 +53,10 @@ proje-adi/
 - Node.js 18+
 - npm (veya yarn)
 
+## 📸 Ekran Görüntüsü
+
+![Ödeme Formu](public/screenshot.png)
+
 ## 🌐 GitHub
 
 [Proje GitHub Sayfası](https://github.com/ozcanzaferayan/react)
@@ -62,4 +67,3 @@ MIT Lisansı ile lisanslanmıştır. Özgürce kullanabilir, düzenleyebilir ve 
 
 ---
 
-Keyifli kodlamalar! 🎉

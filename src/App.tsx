@@ -14,7 +14,7 @@ const App = () => {
   }
 
   return (
-    <div className='font-sans'>
+    <div className='grid grid-cols-1 items-center h-screen font-sans'>
       <div className='border  max-w-sm border-gray-300 shadow-xs p-4 m-20 rounded mx-auto'>
         <div className='font-bold text-xl p-2'>Ödeme Bilgileri</div>
         <div className='font-base text-base text-slate-500 px-2 mb-4'>Kredi kartı bilgilerini giriniz</div>
