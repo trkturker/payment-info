@@ -20,7 +20,7 @@ const App = () => {
         <div className='font-base text-sm text-slate-500 px-2 mb-6'>Kredi kartı bilgilerini giriniz</div>
         <div className='font-semibold text-sm px-2'>Kart Üzerindeki İsim</div>
         <div>
-          <input className='border w-84 border-gray-300 p-2 px-4 m-2 rounded' type='text' value={metin} placeholder='Ahmet Yılmaz' onChange={(e) =>  setMetin(e.target.value)} />
+          <input className='border w-84 border-gray-300 p-2 px-4 m-2 rounded' type='text' value={metin} placeholder='Ahmet Yılmaz' onChange={(e) => setMetin(e.target.value)} />
         </div>
         <div className='font-semibold text-sm px-2'>Kart Numarası</div>
         <div>
@@ -32,7 +32,7 @@ const App = () => {
           <label className='flex-1 font-semibold text-sm flex flex-col' >
             <span className='mx-2'>Ay</span>
             <select className='flex flex-1 border  py-2 px-4 m-2 rounded border-gray-300' value={seciliAy} onChange={e => setSeciliAy(e.target.value)}>
-              <option value="Kadin" id="">AA</option>
+              <option value="AA" id="">AA</option>
               <option value="Ocak" id="">1</option>
               <option value="Subat" id="">2</option>
               <option value="Mart" id="">3</option>
@@ -50,7 +50,7 @@ const App = () => {
           <label className='flex-1 font-semibold text-sm flex flex-col' >
             <span className='mx-2'>Yıl</span>
             <select className='flex flex-1 border  py-2 px-4 m-2 rounded border-gray-300' value={seciliYil} onChange={e => setSeciliYil(e.target.value)}>
-              <option value="Kadin" id="">YY</option>
+              <option value="YY" id="">YY</option>
               <option value="2025" id="">2025</option>
               <option value="2026" id="">2026</option>
               <option value="2027" id="">2027</option>
